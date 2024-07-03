@@ -2,65 +2,38 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('path-to-your-gif.gif') no-repeat center center fixed;
     background-size: cover;
 }
 
 .container {
     text-align: center;
     padding: 20px;
+    position: relative;
 }
 
-header {
-    background-color: white;
-    text-align: right;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav .right-menu {
-    margin-left: auto;
-}
-
-nav .right-menu li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.event-info {
-    background: linear-gradient(135deg, #eef1f5, #cfd8e3);
+.TitleContainer {
+    background: url('Assets/NikeBackground.gif') no-repeat center center;
+    background-size: cover;
+    opacity: 0.;
     padding: 50px 20px;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
 }
 
-.event-info h1 {
+.TitleContainer h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: white;
 }
 
-.event-info p {
+.TitleContainer p {
     font-size: 18px;
     margin: 10px 0;
-}
-
-.countdown {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px 0;
+    color: white;
 }
 
 .register-btn {
@@ -71,6 +44,8 @@ nav .right-menu li {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 
 .register-btn:hover {
@@ -89,9 +64,14 @@ nav .right-menu li {
     font-size: 24px;
 }
 
+.header nav {
+    text-align: right;
+}
+
 .header nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    font-size: 16px;
 }
