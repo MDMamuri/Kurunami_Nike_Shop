@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('path-to-your-gif.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: white;
+    text-align: right;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav .right-menu {
+    margin-left: auto;
+}
+
+nav .right-menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.event-info {
+    background: linear-gradient(135deg, #eef1f5, #cfd8e3);
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-info h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.event-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.countdown {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.register-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #333;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 0 4px 2px -2px gray;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
