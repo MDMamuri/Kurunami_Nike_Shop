@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="Shopping.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="filter-category">
+                <h2>By Category</h2>
+                <ul>
+                    <li><input type="checkbox"> Sports Shoes (369)</li>
+                    <li><input type="checkbox"> Men's Apparel (289)</li>
+                    <li><input type="checkbox"> Women's Apparel (256)</li>
+                    <li><input type="checkbox"> Bags (245)</li>
+                    <li><input type="checkbox"> Gear & Accessories (203)</li>
+                    <li><input type="checkbox"> Indoor Sports (192)</li>
+                    <li><input type="checkbox"> Outdoor Sports (179)</li>
+                    <li><input type="checkbox"> Sports Accessories (164)</li>
+                    <li><input type="checkbox"> Fitness Equipments (140)</li>
+                    <li><input type="checkbox"> Athletic Socks (126)</li>
+                </ul>
+            </div>
+            <div class="filter-rating">
+                <h2>Rating</h2>
+                <ul>
+                    <li><input type="checkbox"> 5 Stars</li>
+                    <li><input type="checkbox"> 4 Stars & Up</li>
+                    <li><input type="checkbox"> 3 Stars & Up</li>
+                    <li><input type="checkbox"> 2 Stars & Up</li>
+                </ul>
+            </div>
+            <div class="filter-price">
+                <h2>Price Range</h2>
+                <input type="text" placeholder="Min"> - <input type="text" placeholder="Max">
+                <button>Apply</button>
+            </div>
+            <div class="filter-location">
+                <h2>Shipped From</h2>
+                <ul>
+                    <li><input type="checkbox"> South Luzon</li>
+                    <li><input type="checkbox"> North Luzon</li>
+                    <li><input type="checkbox"> NCR</li>
+                    <li><input type="checkbox"> Overseas</li>
+                </ul>
+            </div>
+            <div class="filter-shipping">
+                <h2>Shipping Option</h2>
+                <ul>
+                    <li><input type="checkbox"> Standard Local</li>
+                    <li><input type="checkbox"> Shopee Self Collect</li>
+                    <li><input type="checkbox"> Standard International</li>
+                </ul>
+            </div>
+            <div class="filter-promotion">
+                <h2>Service & Promotion</h2>
+                <ul>
+                    <li><input type="checkbox"> With Video</li>
+                    <li><input type="checkbox"> Ready Stock</li>
+                    <li><input type="checkbox"> With Discount</li>
+                </ul>
+            </div>
+            <button class="clear-all">Clear All</button>
+        </div>
+
+        <div class="products">
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8a9db44d-ee3b-42ab-88ea-2c48d37bc9ba/pegasus-41-blueprint-road-running-shoes-9ln3lK.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus 41 Blueprint</p>
+            <p>₱7,395</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8301a11f-4b63-4034-bd1e-ff080dcad33b/pegasus-easyon-blueprint-road-running-shoes-qsKFJB.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus 41</p>
+            <p>₱7,895</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/345a9e8e-29b7-4c1d-98e8-d03be07d7f28/pegasus-41-road-running-shoes-tVfmVc.png" alt="Product Image">
+        <div class="product-info">
+            <p>Product Name</p>
+            <p>$99.99</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2caa40d0-6887-4844-9431-5004b0a1e317/pegasus-41-road-running-shoes-RZm89S.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus 41</p>
+            <p>₱7,395</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3cfa0374-d35c-4083-a466-35c5ce5e8eaa/pegasus-41-road-running-shoes-RZm89S.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus 41</p>
+            <p>₱7,395</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d15d9326-cb42-430d-9abb-58a923e80205/pegasus-41-road-running-shoes-HPk3zB.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus 41</p>
+            <p>₱7,395</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0558cdb5-4d42-4f4d-9b37-5038f1f97f9f/pegasus-41-road-running-shoes-RZm89S.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus 41</p>
+            <p>₱7,395</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/63c4596a-ca9a-4a56-82f3-0387903ed5f1/pegasus-41-road-running-shoes-RZm89S.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus 41</p>
+            <p>₱7,395</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c6249d7d-3e7d-4a65-a9c2-92564918b393/pegasus-trail-5-trail-running-shoes-2jxMFQ.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus Trail 5</p>
+            <p>₱7,895</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/acc7222f-ea1b-40de-b66f-987d269e5c33/pegasus-trail-4-trail-running-shoes-LP9MFR.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus Trail 4</p>
+            <p>₱7,095</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8b68cabf-7151-42ca-b399-f6fa5dee43fa/pegasus-trail-4-gore-tex-waterproof-trail-running-shoes-pQ2Pzs.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus Trail 4 GORE-TEX</p>
+            <p>₱8,895</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/283a359e-c8f0-4b18-8f4b-afbe4ac018f0/p-6000-shoes-XWch7V.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike P-6000</p>
+            <p>₱5,495</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9abb53f4-c20c-4a55-8a1c-82142cb4ae8b/p-6000-shoes-sbwFpl.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike P-6000 Premium</p>
+            <p>₱6,895</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/12f0bbe7-1d4e-4e81-b8e1-b1a5c6874204/pegasus-trail-5-trail-running-shoes-2jxMFQ.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus Trail 5</p>
+            <p>₱7,895</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ef34ecc-c492-47e0-92ec-f6d0ff78c65c/pegasus-trail-5-trail-running-shoes-2jxMFQ.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Pegasus Trail 5</p>
+            <p>₱7,895</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/9572bdb3-2b03-4c54-9b83-adcf41c34d18/air-peg-2k5-white-and-black-fj1909-100-release-date.jpg" alt="Product Image">
+        <div class="product-info">
+            <p>Air Peg 2K5</p>
+            <p>₱8,395.00</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/02bf37da-1b9b-4f16-a7c2-fd857e6b5d84/p-6000-shoes-X54dW2.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike P-6000</p>
+            <p>₱6,195</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fa1bceaf-21bc-44b5-853b-33eac3c34e2b/p-6000-shoes-5qgkXp.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike P-6000</p>
+            <p>₱6,195</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ab132ade-35a9-47d1-af9a-66ad6f21ed45/revolution-7-road-running-shoes-Ws2ZGl.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Revolution 7</p>
+            <p>₱2,895</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4d24ed8d-2bb6-457a-a4d2-15d2fb2fff17/vaporfly-3-road-racing-shoes-xsDgvM.png" alt="Product Image">
+        <div class="product-info">
+            <p>Nike Vaporfly 3</p>
+            <p>₱11,995</p>
+        </div>
+    </div>
+</div>
+
+        </script>
+</body>
+</html>
+

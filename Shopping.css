@@ -1,0 +1,256 @@
+
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    padding: 0 15px;
+}
+
+.account-icon img {
+    max-height: 40px;
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    border-radius: 50%; /* Make it a circle */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+
+.navbar {
+    background-color: #ffffff;
+    padding: 0 15px;
+}
+
+.navbar-brand, .nav-link {
+    color: rgb(0, 0, 0) !important;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    border-color: rgb(0, 0, 0);
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D%220 0 30 30%22 xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cpath stroke%3D%22rgba%280%2C 0%2C 0%2C 0.5%29%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+}
+
+@media (max-width: 990px) {
+    .navbar-toggler {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+/* Search Bar Styles */
+.form-inline {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.form-control {
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+}
+
+.btn-outline-success {
+    border-radius: 20px;
+}
+
+.logo {
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #fff;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: auto;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.account-icon {
+    margin-right: 10px;
+}
+
+.account-icon img {
+    width: 40px;
+    height: auto;
+}
+
+.form-control {
+    margin-right: 10px;
+}
+
+.new-edition-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-bottom: 100px;
+}
+
+.new-edition-section h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.new-edition-section h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.new-edition-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.new-edition-content p {
+    margin: 0;
+}
+
+.new-edition-content img {
+    width: 600px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color: #fff;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.product {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-info p:first-child {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-info p:last-child {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+    }
+
+    .form-inline {
+        margin-left: 10px;
+    }
+
+    .account-icon img {
+        width: 20px;
+    }
+
+    .product {
+        width: 100%;
+    }
+}
