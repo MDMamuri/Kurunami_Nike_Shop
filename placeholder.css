@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eeeeea;
+}
+
+.placeholder-section {
+    background-color: #333; 
+    padding: 50px 20px; 
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 100px;
+    
+    background-size: cover;
+    background-position: center; 
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Background images for cards */
+.card[for="card1"] {
+    background-image: url('https://sneakernews.com/wp-content/uploads/2024/03/nike-air-max-1-86-royal-DO9844-101-3.jpg?w=1140');
+}
+
+.card[for="card2"] {
+    background-image: url('https://i.ebayimg.com/images/g/l58AAOSwAaNhn86Q/s-l1200.jpg');
+}
+
+.card[for="card3"] {
+    background-image: url('https://cdn.sanity.io/images/d6wcctii/production/c7d6fe6c122dc7416b873844b8d01858b27b48dc-1070x760.png?w=1600&q=95&fit=clip&auto=format');
+}
+
+.card[for="card4"] {
+    background-image: url('https://www.nicekicks.com/files/2024/03/Nike-Air-Pegasus-2K5-Bicoastal-FZ2590-100-01.jpg');
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Allow container height to adjust */
+    }
+    .card {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Allow container height to adjust */
+    }
+    .card {
+        width: 100%;
+        height: auto; /* Adjust height for better visibility */
+        margin: 10px 0;
+        background-size: cover;
+    }
+}

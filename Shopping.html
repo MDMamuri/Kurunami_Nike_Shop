@@ -5,37 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Products</title>
     <link rel="stylesheet" href="Shopping.css">
+    <link rel="stylesheet" href="https://unpkg.com/feather-icons/dist/feather.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
-<body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand logo" href="#">
-                <img src="https://1000logos.net/wp-content/uploads/2017/03/Nike-Logo-1971-now.png" alt="Nike Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">New & Featured</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <a href="Account_Page.html" class="account-icon">
-                    <img src="https://i.pinimg.com/originals/f1/0f/f7/f10ff70a7155e5ab666bcdd1b45b726d.jpg" alt="Account Icon">
+<body>  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://1000logos.net/wp-content/uploads/2017/03/Nike-Logo-1971-now.png" alt="Nike Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search">
+                <button class="search-button">
+                    <i data-feather="search"></i>
+                </button>
+            </form>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="#" title="Favorites">
+                    <i data-feather="heart"></i> 
+                </a>
+                <a class="nav-item nav-link" href="#" title="Shopping Bag">
+                    <i data-feather="shopping-bag"></i> 
+                </a>
+                <a class="nav-item nav-link" href="#" title="User Profile">
+                    <i data-feather="user"></i> 
                 </a>
             </div>
-        </nav>
-    </div>
-
-    <!-- New Section -->
+        </div>
+    </nav>
+    
+    
     <div class="new-edition-section">
         <h1>Nike</h1>
         <h2>NEW EDITION</h2>
@@ -123,8 +126,8 @@
             <div class="product">
                 <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/345a9e8e-29b7-4c1d-98e8-d03be07d7f28/pegasus-41-road-running-shoes-tVfmVc.png" alt="Product Image">
                 <div class="product-info">
-                    <p>Product Name</p>
-                    <p>$99.99</p>
+                    <p>Nike Pegasus 41</p>
+                    <p>₱7,395</p>
                 </div>
             </div>
             <div class="product">
@@ -249,20 +252,25 @@
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const products = document.querySelectorAll('.product');
+        feather.replace(); 
+        document.addEventListener('DOMContentLoaded', function () {
+            const products = document.querySelectorAll('.product');
+            
+            products.forEach(product => {
+                product.addEventListener('mouseenter', () => {
+                    product.classList.add('product-hover');
+                });
 
-        products.forEach(product => {
-            product.addEventListener('mouseenter', () => {
-                product.classList.add('product-hover');
-            });
-
-            product.addEventListener('mouseleave', () => {
-                product.classList.remove('product-hover');
+                product.addEventListener('mouseleave', () => {
+                    product.classList.remove('product-hover');
+                });
             });
         });
-    });
     </script>
 </body>
 </html>
