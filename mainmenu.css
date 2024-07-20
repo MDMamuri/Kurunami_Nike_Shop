@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.insidehook.com/wp-content/uploads/2023/02/Nike.jpeg?fit=1200%2C800');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.5); /* White with 50% opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    padding: 0 15px;
+}
+
+.navbar-brand, .nav-link {
+    color: rgb(0, 0, 0) !important;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    border-color: rgb(0, 0, 0);
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D%220 0 30 30%22 xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cpath stroke%3D%22rgba%280%2C 0%2C 0%2C 0.5%29%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+}
+
+@media (max-width: 990px) {
+    .navbar-toggler {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+/* Search Bar Styles */
+.form-inline {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.form-control {
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+}
+
+.btn-outline-success {
+    border-radius: 20px;
+    color: #000;
+    border-color: #000;
+}
+
+.btn-outline-success:hover {
+    background-color: #ffffff; 
+    color: #000; 
+    border-color: #da0000;
+}
+
+/* Account Icon Styles */
+.account-icon {
+    margin-left: 15px;
+}
+
+.account-icon img {
+    max-height: 40px;
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    border-radius: 50%; /* Make it a circle */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+
+h1 {
+    font-size: 4em;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 3.5em;
+    margin: 50px auto;
+    max-width: 700px;
+}
+
+
+p {
+    font-size: 1.5em;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+
+button {
+    display: block;
+    margin: 50px auto;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 253, 253);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 50px 0;
+}
+
+
+.carousel-item img {
+    border: 10px solid white;
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+.page3-container {
+    background-color: #333;
+    padding: 50px 20px;
+}
+
+.page3-content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+}
+
+.page3-image1 img,
+.page3-image2 img,
+.page3-image3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page3-text-content {
+    max-width: 100%;
+    padding: 0 20px; 
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.page3-text-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.page3-text-content p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .page3-text-content {
+        font-size: 1.5em; 
+    }
+}
+
+@media (min-width: 992px) {
+    .page3-text-content {
+        font-size: 1.8em; 
+    }
+}
+
+
+footer {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1 1 100%; 
+    min-width: 150px;
+    margin-bottom: 30px; 
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.footer-column h3:nth-of-type(1) {
+    color: #333; 
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-location {
+    font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (min-width: 576px) {
+    .footer-column {
+        flex: 1 1 calc(50% - 40px); /* Two columns on tablets, with space between */
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-column {
+        flex: 1; /* Revert to equal width columns on larger screens */
+        max-width: 250px; /* Limit maximum width of columns */
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-column {
+        flex: 1 1 calc(25% - 60px); /* Four columns on large screens, with more space between */
+        margin-right: 30px;
+    }
+}
