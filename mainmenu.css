@@ -9,6 +9,8 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
     overflow-y: auto;
+    background: rgba(0, 0, 0, 0.5); /* White with 50% opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
 }
 
 /* Navbar Styles */
